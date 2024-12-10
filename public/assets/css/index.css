@@ -40,8 +40,10 @@ ul {
 }
 
 .square {
+    display: inline-block;
     width: 15px;
     height: 15px;
+    border: 1px solid var(--bg-gray-400);
 }
 
 .grid-container {
@@ -97,13 +99,6 @@ ul {
         line-height: 11.72px;
         font-weight: 400;
         color: var(--bg-gray-400);
-
-        >span {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
-            border: 1px solid var(--bg-gray-400);
-        }
     }
 }
 
@@ -169,10 +164,7 @@ ul {
         align-items: center;
         gap: 7px;
 
-        >span {
-            display: inline-block;
-            width: 15px;
-            height: 15px;
+        >.square {
             border: 1px solid var(--bg-white);
         }
     }
