@@ -25,22 +25,22 @@
 
                 <ul class="grid-container__left-sidebar--navigation-list">
                     <li>
-                        <span></span> Home
+                        <span class="square"></span> Home
                     </li>
                     <li>
-                        <span></span> My Files
+                        <span class="square"></span> My Files
                     </li>
                     <li>
-                        <span></span> Recent Files
+                        <span class="square"></span> Recent Files
                     </li>
                     <li>
-                        <span></span> Shared Files
+                        <span class="square"></span> Shared Files
                     </li>
                     <li>
-                        <span></span> File Request
+                        <span class="square"></span> File Request
                     </li>
                     <li>
-                        <span></span> Trash
+                        <span class="square"></span> Trash
                     </li>
                 </ul>
             </section>
@@ -49,33 +49,121 @@
                 <div class="grid-container__left-sidebar--upload-files-button" onclick="showPopup()">
                     <ul class="grid-container__left-sidebar--upload-files-list" id="popup">
                         <li>
-                            <span></span> Upload files
+                            <span class="square"></span> Upload files
                         </li>
                         <li>
-                            <span></span> Upload folder
+                            <span class="square"></span> Upload folder
                         </li>
                         <li>
-                            <span></span> New folder
+                            <span class="square"></span> New folder
                         </li>
                         <li>
-                            <span></span> More
+                            <span class="square"></span> More
                         </li>
                     </ul>
 
                     <div>
-                        <p>
-                            Create New
-                        </p>
-                        <span>+</span>
+                        <p>Create New</p> <span>+</span>
                     </div>
                 </div>
             </section>
         </aside>
 
         <!-- main-content -->
-        <section class="grid-container__main-content">
+        <main class="grid-container__main-content">
+            <form action="none" class="grid-container__main-content--search-input">
+                <span class="square"></span>
+                <input type="search" placeholder="Search">
+            </form>
 
-        </section>
+            <section class="grid-container__main-content--recently-used-section">
+                <div>
+                    <h2>Recently Used</h2>
+                    <div>
+                        <span class="square"></span>
+                        <span class="square"></span>
+                    </div>
+                </div>
+
+                <div class="grid-container__main-content--recently-used-section--card-list">
+                    <article class="card-list__card">
+                        <div class="card-list__card--graphic">
+                            <div class="square-overlap">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="circle-overlap">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="more-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="card-list__card--info">
+                            <h3>App Project</h3>
+                            <time datetime="2020-02-20">Created: 20.02.2020</time>
+                        </div>
+                    </article>
+
+                    <article class="card-list__card">
+                        <div class="card-list__card--graphic">
+                            <div class="square-overlap">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="circle-overlap">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="more-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="card-list__card--info">
+                            <h3>App Project</h3>
+                            <time datetime="2020-02-20">Created: 20.02.2020</time>
+                        </div>
+                    </article>
+
+                    <article class="card-list__card">
+                        <div class="card-list__card--graphic">
+                            <div class="square-overlap">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="circle-overlap">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span class="more-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+
+                        <div class="card-list__card--info">
+                            <h3>App Project</h3>
+                            <time datetime="2020-02-20">Created: 20.02.2020</time>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
 
         <!-- right-sidebar -->
         <aside class="grid-container__right-sidebar">
@@ -89,6 +177,12 @@
         const popup = document.getElementById('popup');
         popup.classList.toggle('show')
     }
+
+    document
+        .getElementById('grid-container__main-content--search-input')
+        .addEventListener('submit', (e) => {
+            e.preventDefault();
+        });
 </script>
 
 </html>
