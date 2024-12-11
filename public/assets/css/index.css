@@ -68,11 +68,12 @@ ul {
 
 .square-overlap {
     position: relative;
+    width: 35px;
+    height: 31px;
 
     >span:first-child {
         position: absolute;
-        top: 5px;
-        left: -5px;
+        bottom: 0;
         width: 30px;
         height: 26px;
         background-color: var(--bg-yellow-100);
@@ -80,8 +81,7 @@ ul {
 
     >span:last-child {
         position: absolute;
-        top: 0;
-        left: 0;
+        right: 0;
         width: 30px;
         height: 26px;
         background-color: var(--bg-yellow-300);
@@ -90,20 +90,15 @@ ul {
 
 .circle-overlap {
     position: relative;
+    display: flex;
+    width: fit-content;
 
     >span:first-child {
-        position: absolute;
-        left: -12px;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background-color: var(--bg-white);
-        border: 1px solid var(--bg-gray-300);
+        margin: 0;
     }
 
-    >span:last-child {
-        position: absolute;
-        left: 0;
+    >span {
+        margin-left: -6px;
         width: 18px;
         height: 18px;
         border-radius: 50%;
@@ -116,7 +111,7 @@ ul {
     display: grid;
     gap: 22px;
     grid-template-areas: "left-sidebar main-content right-sidebar";
-    grid-template-columns: 172px 1fr 252px;
+    grid-template-columns: 172px 562px 252px;
     height: 100vh;
 }
 
@@ -278,7 +273,7 @@ ul {
 .grid-container__main-content {
     grid-area: main-content;
     background-color: var(--bg-gray-100);
-    padding: 25px 17.5px;
+    padding: 25px 16px;
 }
 
 .grid-container__main-content--search-input {
@@ -318,7 +313,7 @@ ul {
     gap: 23px;
     margin-top: 25px;
 
-    >div {
+    >.grid-container__main-content--recently-used-section--header {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -347,7 +342,7 @@ ul {
 
 .grid-container__main-content--recently-used-section--card-list {
     display: flex;
-    gap: 14px;
+    gap: 0;
 
     >.card-list__card {
         display: flex;
@@ -360,17 +355,19 @@ ul {
         box-shadow: 0 4px 16px rgba(58, 58, 58, 0.07);
 
         >.card-list__card--graphic {
-            position: relative;
             height: 40%;
 
             >.square-overlap {
                 top: 20px;
-                left: 12px;
+                left: 11px;
+
+                &:first-child {
+                    left: 12px;
+                }
             }
 
             >.circle-overlap {
                 left: 67px;
-                margin-top: 30px;
             }
 
 
