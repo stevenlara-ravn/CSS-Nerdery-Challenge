@@ -35,7 +35,7 @@
 
 html {
     font-family: "Roboto", sans-serif;
-    font-weight: 400 !important;
+    font-weight: 400;
 }
 
 ul {
@@ -393,10 +393,210 @@ ul {
             >time {
                 font-size: 8px;
                 line-height: 9.38px;
+                letter-spacing: 0.05em;
                 color: var(--bg-gray-400);
             }
         }
     }
+}
+
+.grid-container__main-content--recent-files-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+    gap: 14px;
+}
+
+.grid-container__main-content--recent-files-section--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >h2 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.44px;
+        color: var(--bg-gray-600);
+    }
+
+    >h3 {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.06px;
+        color: var(--bg-gray-600);
+    }
+}
+
+.grid-container__main-content--recent-files-section--card-list {
+    display: flex;
+    max-width: 528px;
+    flex-direction: column;
+    gap: 16px;
+
+    >section {
+        display: grid;
+        grid-template-columns: 261px 126px 116px 1fr;
+        align-items: center;
+
+        >h3 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-400);
+        }
+
+        >span {
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+        }
+    }
+}
+
+.grid-container__main-content--recent-files-section--card-list--card {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 248px 126px 116px 1fr;
+    background-color: var(--bg-white);
+    border-radius: 10px;
+    width: 528px;
+    height: 42px;
+    padding: 11px 12px 10px 13px;
+
+    >div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        >span {
+            display: inline-block;
+            width: 21px;
+            height: 21px;
+            border-radius: 5px;
+
+        }
+
+        >p {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-600);
+        }
+    }
+
+    >p,
+    >time {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.06px;
+        color: var(--bg-gray-400);
+    }
+
+    >.more-icon {
+        position: relative;
+        flex-direction: row;
+        width: 13px;
+        height: 3px;
+    }
+}
+
+.grid-container__main-content--shared-with-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+
+    >div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >h2 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.44px;
+            color: var(--bg-gray-600);
+        }
+
+        >h3 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-600);
+        }
+    }
+}
+
+.shared-with-me-section__card-list {
+    display: flex;
+    gap: 13px;
+}
+
+.shared-with-me-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 157px;
+    height: 79px;
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 13px 11px 0;
+
+    >.shared-with-me-section__card--graphic {
+        display: flex;
+        background-color: #4AC29D;
+        height: fit-content;
+        align-items: start;
+
+        gap: 50px;
+
+        >.solid-square {
+            width: 30px;
+            height: 26px;
+            background-color: var(--bg-yellow-300);
+        }
+
+        >.colored-circle-overlap {
+            display: inline-flex;
+            align-self: center;
+
+        }
+
+        >.colored-circle-overlap>span {
+            position: relative;
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 1px;
+            border-color: var(--bg-gray-300);
+        }
+    }
+
+    >.shared-with-me-section__card--info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 50%;
+
+        >h3 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-600);
+        }
+
+        >time {
+            font-size: 8px;
+            line-height: 9.38px;
+            letter-spacing: 0.05em;
+            color: var(--bg-gray-400);
+        }
+    }
+
 }
 
 
