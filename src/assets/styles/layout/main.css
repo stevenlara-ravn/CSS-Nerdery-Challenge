@@ -1,0 +1,35 @@
+@import url('../components/main-content/search.css');
+@import url('../components/main-content/recently-used.css');
+@import url('../components/main-content/recent-files.css');
+@import url('../components/main-content/shared-with-me.css');
+
+.grid-container {
+    display: grid;
+    justify-content: space-between;
+    gap: 22px;
+    width: 100%;
+    grid-template-areas: "left-sidebar main-content right-sidebar";
+    grid-template-columns: 172px 1fr 252px;
+    height: 100vh;
+}
+
+.grid-container__main-content {
+    grid-area: main-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-gray-100);
+    padding: 25px 16px;
+    min-width: 562px;
+    width: 100%;
+}
+
+.grid-container__main-content--content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}

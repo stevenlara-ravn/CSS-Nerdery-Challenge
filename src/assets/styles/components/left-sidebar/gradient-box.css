@@ -1,0 +1,6 @@
+.grid-container__left-sidebar--gradient-box {
+    background: var(--box-gradient-color);
+    width: 74px;
+    height: 21px;
+    border-radius: 5px;
+}

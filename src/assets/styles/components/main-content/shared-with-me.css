@@ -1,0 +1,97 @@
+.grid-container__main-content--shared-with-me-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 25px;
+
+    >.shared-with-me-section__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        >h2 {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.44px;
+            color: var(--bg-gray-600);
+        }
+
+        >h3 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-600);
+        }
+    }
+}
+
+.shared-with-me-section__card-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+}
+
+.shared-with-me-section__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 157px;
+    height: 79px;
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 13px 11px 0;
+    box-shadow: var(--box-shadow);
+
+    >.shared-with-me-section__card--graphic {
+        display: flex;
+        height: fit-content;
+        align-items: start;
+        gap: 50px;
+
+        >.solid-square {
+            width: 30px;
+            height: 26px;
+            background-color: var(--bg-yellow-300);
+        }
+
+        >.colored-circle-overlap {
+            display: inline-flex;
+            align-self: center;
+        }
+
+        >.colored-circle-overlap>span {
+            position: relative;
+            margin-right: -5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 1px;
+            background-color: var(--bg-white);
+        }
+    }
+
+    >.shared-with-me-section__card--info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        height: 50%;
+
+        >h3 {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.06px;
+            color: var(--bg-gray-600);
+        }
+
+        >time {
+            font-size: 8px;
+            font-weight: 400;
+            line-height: 9.38px;
+            letter-spacing: 0.05em;
+            color: var(--bg-gray-400);
+        }
+    }
+}

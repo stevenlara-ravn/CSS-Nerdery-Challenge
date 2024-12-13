@@ -1,0 +1,18 @@
+@import url('../components/left-sidebar/gradient-box.css');
+@import url('../components/left-sidebar/navigation.css');
+@import url('../components/left-sidebar/upload-file-button.css');
+
+.grid-container__left-sidebar {
+    grid-area: left-sidebar;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bg-gray-600);
+    color: var(--bg-white);
+    min-width: 172px;
+    width: 100%;
+}
+
+.grid-container__left-sidebar--files-section {
+    padding: 0 29px 27px;
+}

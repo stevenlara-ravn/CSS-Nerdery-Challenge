@@ -1,0 +1,20 @@
+@import url('./pie-chart.css');
+@import url('./storage-list.css');
+@import url('./upgrade-ad.css');
+
+.right-sidebar__storage-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 17px 25px 20px 33px;
+
+    >div {
+        >p {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23.44px;
+            color: var(--bg-gray-600);
+        }
+    }
+}

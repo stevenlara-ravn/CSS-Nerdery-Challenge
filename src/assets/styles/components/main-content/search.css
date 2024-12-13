@@ -1,0 +1,32 @@
+.grid-container__main-content--search-input {
+    width: 100%;
+    max-width: 527px;
+    position: relative;
+
+    input[type="search"] {
+        width: 527px;
+        height: 29px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        color: var(--bg-gray-400);
+        padding-left: 34px;
+
+        &::placeholder {
+            color: var(--bg-gray-200);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    >.square {
+        position: absolute;
+        top: 7px;
+        left: 12px;
+        width: 15px;
+        height: 15px;
+        border-color: var(--bg-gray-200);
+    }
+}

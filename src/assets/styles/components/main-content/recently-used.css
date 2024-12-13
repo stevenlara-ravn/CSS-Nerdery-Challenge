@@ -1,0 +1,92 @@
+.grid-container__main-content--recently-used-section {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin-top: 25px;
+
+    >.grid-container__main-content--recently-used-section--header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        >h2 {
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--bg-gray-600);
+            line-height: 23.44px;
+        }
+
+        >div {
+            display: flex;
+            gap: 10px;
+        }
+
+        >div>span {
+            border-color: var(--bg-gray-350);
+        }
+
+        >div>span:first-child {
+            border-color: var(--bg-gray-600);
+        }
+    }
+}
+
+.grid-container__main-content--recently-used-section--card-list {
+    display: flex;
+    gap: 0;
+
+    >.card-list__card {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 159px;
+        height: 133px;
+        background-color: var(--bg-white);
+        border-radius: 12px;
+        box-shadow: var(--box-shadow);
+
+        >.card-list__card--graphic {
+            height: 40%;
+
+            >.square-overlap {
+                top: 20px;
+                left: 11px;
+
+                &:first-child {
+                    left: 12px;
+                }
+            }
+
+            >.circle-overlap {
+                left: 67px;
+            }
+
+
+            >.more-icon {
+                top: 16px;
+                right: 13px;
+            }
+        }
+
+        >.card-list__card--info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 60%;
+            padding: 29px 14px;
+
+            >h3 {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.06px;
+            }
+
+            >time {
+                font-size: 8px;
+                line-height: 9.38px;
+                letter-spacing: 0.05em;
+                color: var(--bg-gray-400);
+            }
+        }
+    }
+}

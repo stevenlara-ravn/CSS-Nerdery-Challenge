@@ -1,0 +1,13 @@
+@import url('../components/right-sidebar/header-menu.css');
+@import url('../components/right-sidebar/storage-info.css');
+
+.grid-container__right-sidebar {
+    grid-area: right-sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: var(--bg-gray-100);
+    min-width: 252px;
+    width: 100%;
+    height: 100%;
+}

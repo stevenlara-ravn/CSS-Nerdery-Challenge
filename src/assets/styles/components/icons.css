@@ -1,0 +1,72 @@
+.square {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--bg-gray-400);
+}
+
+.more-icon {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3px;
+    height: 13px;
+    gap: 2px;
+
+    >span {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: var(--bg-gray-150);
+    }
+}
+
+.square-overlap {
+    position: relative;
+    width: 35px;
+    height: 31px;
+
+    >span:first-child {
+        position: absolute;
+        bottom: 0;
+        width: 30px;
+        height: 26px;
+        background-color: var(--bg-yellow-100);
+    }
+
+    >span:last-child {
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 26px;
+        background-color: var(--bg-yellow-300);
+    }
+}
+
+.circle-overlap {
+    position: relative;
+    display: flex;
+    width: fit-content;
+
+    >span:first-child {
+        margin: 0;
+    }
+
+    >span {
+        margin-left: -6px;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: var(--bg-white);
+        border: 1px solid var(--bg-gray-300);
+    }
+}
+
+.circle {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: var(--bg-gray-150);
+}
