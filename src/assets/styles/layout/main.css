@@ -10,7 +10,8 @@
     width: 100%;
     grid-template-areas: "left-sidebar main-content right-sidebar";
     grid-template-columns: 172px 1fr 252px;
-    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
 }
 
 .grid-container__main-content {
@@ -23,6 +24,7 @@
     padding: 25px 16px;
     min-width: 562px;
     width: 100%;
+    height: 100dvh;
 }
 
 .grid-container__main-content--content-container {

@@ -11,8 +11,13 @@
     color: var(--bg-white);
     min-width: 172px;
     width: 100%;
+    height: 100dvh;
 }
 
 .grid-container__left-sidebar--files-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 29px 27px;
 }

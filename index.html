@@ -400,6 +400,10 @@
             </div>
         </aside>
     </div>
+
+    <!-- Floating buttons -->
+    <button class="floating-button floating-button--left" onclick="toggleSidebar('left')">→</button>
+    <button class="floating-button floating-button--right" onclick="toggleSidebar('right')">←</button>
 </body>
 
 <script>
@@ -407,6 +411,46 @@
         const popup = document.getElementById('popup');
         popup.classList.toggle('show')
     }
+
+    function toggleSidebar (side) {
+        const leftSidebar = document.querySelector('.grid-container__left-sidebar');
+        const rightSidebar = document.querySelector('.grid-container__right-sidebar');
+        const leftButton = document.querySelector('.floating-button--left');
+        const rightButton = document.querySelector('.floating-button--right');
+
+        if (side === 'left') {
+            const isOpen = leftSidebar.classList.toggle('open');
+
+            rightSidebar.classList.remove('open');
+            rightButton.classList.remove('hidden');
+            leftButton.classList.toggle('hidden', isOpen);
+        } else if (side === 'right') {
+            const isOpen = rightSidebar.classList.toggle('open');
+
+            leftSidebar.classList.remove('open');
+            leftButton.classList.remove('hidden');
+            rightButton.classList.toggle('hidden', isOpen);
+        }
+    }
+
+    document.addEventListener('click', function (event) {
+        const leftSidebar = document.querySelector('.grid-container__left-sidebar');
+        const rightSidebar = document.querySelector('.grid-container__right-sidebar');
+        const leftButton = document.querySelector('.floating-button--left');
+        const rightButton = document.querySelector('.floating-button--right');
+
+        if (
+            !event.target.closest('.grid-container__left-sidebar') &&
+            !event.target.closest('.grid-container__right-sidebar') &&
+            !event.target.closest('.floating-button')
+        ) {
+            leftSidebar.classList.remove('open');
+            rightSidebar.classList.remove('open');
+
+            leftButton.classList.remove('hidden');
+            rightButton.classList.remove('hidden');
+        }
+    });
 
     document
         .getElementById('grid-container__main-content--search-input')
