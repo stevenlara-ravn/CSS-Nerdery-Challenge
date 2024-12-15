@@ -40,6 +40,14 @@
         width: 100%;
         min-width: 0px;
         transition: all 0.3s ease-in-out;
+
+        .grid-container__main-content--recent-files-section--card-list {
+            overflow-x: auto;
+        }
+
+        >.grid-container__main-content--content-container {
+            justify-content: space-around;
+        }
     }
 
     .card-list__card--graphic {

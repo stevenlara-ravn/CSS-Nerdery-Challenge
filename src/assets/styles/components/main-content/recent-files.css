@@ -32,7 +32,7 @@
     flex-direction: column;
     width: 100%;
     gap: 16px;
-    overflow: auto;
+    overflow: hidden;
 
     >section {
         display: grid;
