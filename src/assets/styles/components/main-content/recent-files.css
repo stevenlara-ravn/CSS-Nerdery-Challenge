@@ -1,6 +1,7 @@
 .grid-container__main-content--recent-files-section {
     display: flex;
     flex-direction: column;
+    width: 100%;
     margin-top: 38px;
     gap: 14px;
 }
@@ -29,7 +30,9 @@
     display: flex;
     max-width: 528px;
     flex-direction: column;
+    width: 100%;
     gap: 16px;
+    overflow: auto;
 
     >section {
         display: grid;

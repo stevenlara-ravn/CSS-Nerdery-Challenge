@@ -4,7 +4,7 @@
     position: relative;
 
     input[type="search"] {
-        width: 527px;
+        max-width: 527px;
         height: 29px;
         width: 100%;
         border: none;

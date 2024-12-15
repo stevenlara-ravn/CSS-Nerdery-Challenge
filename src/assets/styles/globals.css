@@ -1,0 +1,23 @@
+.floating-button {
+    position: fixed;
+    display: none;
+    top: 15%;
+    z-index: 1;
+    padding: 1px 5px 4px;
+    background-color: var(--bg-gray-600);
+    color: var(--bg-white);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button--left {
+    left: 0px;
+    border-radius: 0 5px 5px 0;
+}
+
+.floating-button--right {
+    right: 0px;
+    border-radius: 5px 0 0 5px;
+}

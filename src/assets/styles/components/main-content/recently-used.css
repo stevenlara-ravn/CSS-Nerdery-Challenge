@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 23px;
     margin-top: 25px;
+    width: 100%;
 
     >.grid-container__main-content--recently-used-section--header {
         display: flex;

@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 16px;
     margin-top: 25px;
+    width: 100%;
 
     >.shared-with-me-section__header {
         display: flex;
@@ -30,6 +31,7 @@
     justify-content: start;
     align-items: center;
     gap: 13px;
+    overflow-x: auto;
 }
 
 .shared-with-me-section__card {
