@@ -71,7 +71,7 @@
 
         <!-- main-content -->
         <main class="grid-container__main-content">
-            <form action="none" class="grid-container__main-content--search-input">
+            <form id="mainContentSearch" class="grid-container__main-content--search-input">
                 <span class="square"></span>
                 <input type="search" placeholder="Search">
             </form>
@@ -457,7 +457,7 @@
     });
 
     document
-        .getElementById('grid-container__main-content--search-input')
+        .getElementById('mainContentSearch')
         .addEventListener('submit', (e) => {
             e.preventDefault();
         });
