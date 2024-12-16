@@ -406,17 +406,19 @@
     <button class="floating-button floating-button--right" onclick="toggleSidebar('right')">←</button>
 </body>
 
-<script>
+<script type="module">
+    import { $ } from './src/lib/dom-selector.js'
+
     function showPopup () {
         const popup = document.getElementById('popup');
         popup.classList.toggle('show')
     }
 
     function toggleSidebar (side) {
-        const leftSidebar = document.querySelector('.grid-container__left-sidebar');
-        const rightSidebar = document.querySelector('.grid-container__right-sidebar');
-        const leftButton = document.querySelector('.floating-button--left');
-        const rightButton = document.querySelector('.floating-button--right');
+        const leftSidebar = $('.grid-container__left-sidebar');
+        const rightSidebar = $('.grid-container__right-sidebar');
+        const leftButton = $('.floating-button--left');
+        const rightButton = $('.floating-button--right');
 
         if (side === 'left') {
             const isOpen = leftSidebar.classList.toggle('open');
@@ -433,11 +435,13 @@
         }
     }
 
+    window.toggleSidebar = toggleSidebar;
+
     document.addEventListener('click', function (event) {
-        const leftSidebar = document.querySelector('.grid-container__left-sidebar');
-        const rightSidebar = document.querySelector('.grid-container__right-sidebar');
-        const leftButton = document.querySelector('.floating-button--left');
-        const rightButton = document.querySelector('.floating-button--right');
+        const leftSidebar = $('.grid-container__left-sidebar');
+        const rightSidebar = $('.grid-container__right-sidebar');
+        const leftButton = $('.floating-button--left');
+        const rightButton = $('.floating-button--right');
 
         if (
             !event.target.closest('.grid-container__left-sidebar') &&
