@@ -41,6 +41,14 @@
         min-width: 0px;
         transition: all 0.3s ease-in-out;
 
+        .grid-container__main-content--recently-used-section--card-list {
+            overflow-x: auto;
+
+            >.card-list__card {
+                min-width: 159px;
+            }
+        }
+
         .grid-container__main-content--recent-files-section--card-list {
             overflow-x: auto;
         }
